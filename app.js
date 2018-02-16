@@ -8,12 +8,13 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({limit: '1gb', extended: false }));
 app.use(CORS);
+app.use(express.static('public')); // fuck;;;
+app.set('views', __dirname + '/views');
+app.set('view engine', 'ejs');
+app.engine('html', require('ejs').renderFile);
 
 app.get('/main', (req,res)=>{
-  fs.readFile('main.html', (error,data)=>{
-    res.writeHead(200, {'Content-Type' : 'text/html'});
-    res.end(data);
-  })
+  res.render('main.html');
 })
 app.listen(3222, ()=>{
   console.log('Server porting on 3222');
