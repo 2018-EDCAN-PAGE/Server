@@ -1,0 +1,29 @@
+{
+  "name": "edcan-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2018-EDCAN-WebSite/Server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/2018-EDCAN-WebSite/Server/issues"
+  },
+  "homepage": "https://github.com/2018-EDCAN-WebSite/Server#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "fs": "0.0.1-security",
+    "mongoose": "^5.0.6",
+    "multiparty": "^4.1.3",
+    "path": "^0.12.7"
+  }
+}
