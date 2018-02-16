@@ -1,0 +1,22 @@
+{
+  "name": "edcan-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2018-EDCAN-WebSite/Server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/2018-EDCAN-WebSite/Server/issues"
+  },
+  "homepage": "https://github.com/2018-EDCAN-WebSite/Server#readme",
+  "dependencies": {
+    "multiparty": "^4.1.3"
+  }
+}
