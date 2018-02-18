@@ -18,7 +18,7 @@ app.get('/', (req,res)=>{
   res.render('main.html');
 })
 
-var router = require('./routes/index')(express.Router(), fs, path, Users);
+var router = require('./routes/index')(express.Router(), fs, path, Users, multiparty);
 app.use('/', router);
 
 

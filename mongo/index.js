@@ -7,10 +7,11 @@ var UsersSchema = mongoose.Schema({
   Student_id : {type : String},
   Phone_number : {type : String},
   email : {type : String},
-  Introduce : {type : String},
-  Motive : {type : String},
-  Ability : {type : String},
-  portfolio : {type : String}
+  Introduce : {type : String}, // 소개
+  Motive : {type : String}, // 동기
+  Ability : {type : String}, // 내일  능력
+  portfolio : {type : String},
+  writed : {type : Boolean}
 });
 Users = mongoose.model("users", UsersSchema);
 
