@@ -17,13 +17,17 @@
   "homepage": "https://github.com/2018-EDCAN-WebSite/Server#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
+    "child_process": "^1.0.2",
     "cors": "^2.8.4",
     "ejs": "^2.5.7",
     "express": "^4.16.2",
     "fs": "0.0.1-security",
+    "http": "0.0.0",
     "mongoose": "^5.0.6",
     "multiparty": "^4.1.3",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "socket.io": "^2.0.4",
+    "util": "^0.10.3"
   },
   "devDependencies": {},
   "description": ""
