@@ -7,7 +7,7 @@ module.exports = (router, Users)=>{
   })
   .post('/chk', async (req,res)=>{
     var result = await Users.find();
-    res.send(result);
+    res.status(200).json(result);
   })
   return router;
 }
