@@ -1,5 +1,5 @@
 module.exports = (router, Users)=>{
-  router.post('/submit', async(req,res)=>{
+  router.post('/', async(req,res)=>{
     var result = await Users.findOne({Student_id : req.body.Student_id});
     if(!result){
       var new_apply = new Users(req.body);

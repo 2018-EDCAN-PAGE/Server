@@ -11,7 +11,6 @@ var UsersSchema = mongoose.Schema({
   Motive : {type : String}, // 동기
   Ability : {type : String}, // 내일  능력
   portfolio : {type : String},
-  writed : {type : Boolean}
 });
 Users = mongoose.model("users", UsersSchema);
 
