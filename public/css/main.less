@@ -1,4 +1,4 @@
-@import "flex.less";
+@import "https://jhun24.github.io/flex.less";
 
 body{
   width:100vw;
@@ -34,19 +34,6 @@ body{
 
 }
 
-.scroll-body > .main-content > .main-title > h4{
-  font-size:40px;
-  font-weight:400;
-  font-family: 'Cabin',sans-serif;
-
-  line-height:50px;
-}
-
-.scroll-body > .main-content > .main-title > p{
-  font-size:14px;
-  font-weight:300;
-  line-height:25px;
-}
 
 .scroll-body > .main-content > .border-box{
   width:94%;
@@ -67,23 +54,61 @@ body{
   .flex-align-between;
 }
 
-.scroll-body > .main-content > .border-box > .icon-box > .scroll{
-  background-image: url("img/scrolldown.png");
-  background-size: cover;
 
-  width:30px;
-  height:30px;
+@media (min-width: 640px){
+  .scroll-body > .main-content > .border-box > .icon-box > .scroll{
+    background-image: url("img/scrolldown.png");
+    background-size: cover;
 
-  margin-left:15px;
+    width:30px;
+    height:30px;
+
+    margin-left:15px;
+  }
+
+
+  .scroll-body > .main-content > .border-box > .icon-box >.logo{
+    background-image: url("img/edcan.png");
+    background-size: cover;
+
+    width:72px;
+    height:60px;
+
+    margin-right:15px;
+  }
+
+  .scroll-body > .main-content > .main-title > h4{
+    font-size:60px;
+    font-weight:400;
+    font-family: 'Cabin',sans-serif;
+
+    line-height:70px;
+  }
+
+  .scroll-body > .main-content > .main-title > p{
+    font-size:14px;
+    font-weight:300;
+    line-height:25px;
+  }
 }
+@media (max-width:639px) {
 
+  .scroll-body > .main-content > .border-box > .icon-box >.logo ,
+  .scroll-body > .main-content > .border-box > .icon-box >.scroll{
+    display:none;
+  }
 
-.scroll-body > .main-content > .border-box > .icon-box >.logo{
-  background-image: url("img/edcan.png");
-  background-size: cover;
+  .scroll-body > .main-content > .main-title > h4{
+    font-size:40px;
+    font-weight:400;
+    font-family: 'Cabin',sans-serif;
 
-  width:72px;
-  height:60px;
+    line-height:50px;
+  }
 
-  margin-right:15px;
+  .scroll-body > .main-content > .main-title > p{
+    font-size:12px;
+    font-weight:300;
+    line-height:20px;
+  }
 }

@@ -1,8 +1,8 @@
-@import "flex.less";
+@import "https://jhun24.github.io/flex.less";
 
 .unit-explain{
   width:90%;
-  height:800px;
+  height:auto;
 
   margin:auto;
 }
@@ -32,32 +32,6 @@
   color:#fff;
 
   margin-left:20px;
-}
-
-.unit-explain > .unit-explain-box{
-  width:100%;
-  height:80%;
-
-  margin-top:30px;
-}
-
-.unit-explain > .unit-explain-box > div{
-  width:100%;
-  height:40%;
-
-  .flex-align-between;
-  margin-top:20px;
-}
-
-
-.unit-explain > .unit-explain-box > div > div{
-  width:48%;
-  height:100%;
-
-  .flex-align-around;
-
-  border:1px solid #fff;
-  border-radius:5px;
 }
 
 .unit-explain > .unit-explain-box > div > .null-box{
@@ -125,4 +99,87 @@
 
   line-height:20px;
 }
+@media(min-width: 640px){
+  .unit-explain > .unit-explain-box > div{
+    width:48%;
+    height:258px;
+    min-width:560px;
+    margin-top:20px;
+  }
 
+
+  .unit-explain > .unit-explain-box > div > div{
+    width:100%;
+    height:100%;
+
+    .flex-align-around;
+
+    border:1px solid #fff;
+    border-radius:5px;
+  }
+
+  .unit-explain > .unit-explain-box{
+    width:100%;
+    height:80%;
+
+    .flex-align-between;
+    flex-wrap: wrap;
+    margin-top:30px;
+  }
+}
+@media (max-width:1245px){
+  .unit-explain > .unit-explain-box > div{
+    width:100%;
+  }
+}
+@media (max-width:639px){
+  .unit-explain > .unit-explain-box{
+    width:100%;
+    height:160%;
+
+    margin-top:30px;
+  }
+
+  .unit-explain > .unit-explain-box > div{
+    width:100%;
+    height:40%;
+
+    margin-top:20px;
+  }
+
+
+  .unit-explain > .unit-explain-box > div > div{
+    width:100%;
+    height:50%;
+
+    .flex-align-around;
+    flex-wrap: wrap;
+    border:1px solid #fff;
+    border-radius:5px;
+
+    margin-top:20px;
+  }
+
+  .unit-explain > .unit-explain-box > div{
+    width:100%;
+    height:auto;
+    min-width: 0;
+    margin-top:20px;
+  }
+  .unit-explain > .unit-explain-box > div > div > .logo-box{
+    width:100%;
+    padding:20px;
+    height:auto;
+    .flex-center;
+  }
+  .unit-explain > .unit-explain-box > div > div > .content-box{
+    width:80%;
+    height:auto;
+    padding-bottom:20px;
+    padding-top:10px;
+    padding-left:0px;
+    border-top:1px solid #fff;
+    border-left:0px;
+    color:#fff;
+  }
+}

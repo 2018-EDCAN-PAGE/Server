@@ -1,4 +1,4 @@
-@import "flex.less";
+@import "https://jhun24.github.io/flex.less";
 
 .apply{
   width:90%;
@@ -43,24 +43,6 @@
   height:60px;
 
   .flex-center;
-}
-
-.apply > .input-box > input{
-  width:calc(~"34% - 40px");
-  height:70%;
-
-  padding-left:20px;
-  padding-right:20px;
-
-  border:none;
-  outline:none;
-
-  background-color:transparent;
-  border-bottom:1px solid #fff;
-
-  color:#fff;
-  font-size:20px;
-  font-weight:200;
 }
 
 .apply > .input-box > input::-webkit-input-placeholder {
@@ -117,60 +99,34 @@
   .flex-center;
 }
 
-.apply > .textarea-box > textarea{
-  resize:none;
 
-  border:1px solid #fff;
-  border-radius:5px;
-  outline:none;
-
-  background-color:transparent;
-  color:#fff;
-  font-size:16px;
-  font-weight:200;
-  line-height:20px;
-
-  padding:20px;
-
-  width:calc(~"80% - 40px");
-  height:calc(~"90% - 40px");
-
-  margin-bottom:30px;
-  margin-top:30px;
-}
-
-.apply > .file-box{
-  width:calc(~"70% - 40px");
-  height:80px;
-
-  margin:auto;
-
-  .flex-align-between;
-
-  margin-top:30px;
-}
-
-.apply > .file-box > label {
-  cursor: pointer;
-
-  width:70%;
+.apply > .file-box > .file-text {
+  width:calc(~"70% - 20px");
   height:80%;
 
   border:1px solid #fff;
   border-radius:5px;
 
-  color:#fff;
+  color:rgb(51,51,51);
   font-size:14px;
   font-weight:200;
+
+  padding-left:20px;
+  background-color: transparent;
 
   .flex-center;
 
 }
 
 .apply > .file-box > #portfolio {
-  opacity: 0;
   position: absolute;
-  z-index: -1;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip:rect(0,0,0,0);
+  border: 0;
 }
 
 .apply > .file-box > .file-btn {
@@ -197,22 +153,6 @@
   .flex-center;
 }
 
-.apply > .apply-btn-box > .apply-btn{
-  width:50%;
-  height:70%;
-
-
-  border:1px solid #fff;
-  border-radius:5px;
-
-  color:#fff;
-  font-size:16px;
-  font-weight:200;
-
-  .flex-center;
-}
-
-
 .ask{
   width:100%;
   height:100px;
@@ -233,4 +173,142 @@
   font-size:14px;
   font-weight:100;
   line-height:20px;
+}
+
+@media (min-width:640px){
+  .apply > .input-box > input{
+    width:calc(~"34% - 40px");
+    height:70%;
+
+    padding-left:20px;
+    padding-right:20px;
+
+    border:none;
+    outline:none;
+
+    background-color:transparent;
+    border-bottom:1px solid #fff;
+
+    color:#fff;
+    font-size:20px;
+    font-weight:200;
+  }
+
+  .apply > .textarea-box > textarea{
+    resize:none;
+
+    border:1px solid #fff;
+    border-radius:5px;
+    outline:none;
+
+    background-color:transparent;
+    color:#fff;
+    font-size:16px;
+    font-weight:200;
+    line-height:20px;
+
+    padding:20px;
+
+    width:calc(~"80% - 40px");
+    height:calc(~"90% - 40px");
+
+    margin-bottom:30px;
+    margin-top:30px;
+  }
+
+  .apply > .file-box{
+    width:calc(~"70% - 40px");
+    height:80px;
+
+    margin:auto;
+
+    .flex-align-between;
+
+    margin-top:30px;
+  }
+
+  .apply > .apply-btn-box > .apply-btn{
+    width:50%;
+    height:70%;
+
+
+    border:1px solid #fff;
+    border-radius:5px;
+
+    color:#fff;
+    font-size:16px;
+    font-weight:200;
+
+    .flex-center;
+  }
+
+}
+
+@media (max-width:639px){
+  .apply > .input-box > input{
+    width:calc(~"80% - 40px");
+    height:70%;
+
+    padding-left:20px;
+    padding-right:20px;
+
+    border:none;
+    outline:none;
+
+    background-color:transparent;
+    border-bottom:1px solid #fff;
+
+    color:#fff;
+    font-size:20px;
+    font-weight:200;
+  }
+
+  .apply > .textarea-box > textarea{
+    resize:none;
+
+    border:1px solid #fff;
+    border-radius:5px;
+    outline:none;
+
+    background-color:transparent;
+    color:#fff;
+    font-size:16px;
+    font-weight:200;
+    line-height:20px;
+
+    padding:20px;
+
+    width:calc(~"90% - 40px");
+    height:calc(~"90% - 40px");
+
+    margin-bottom:30px;
+    margin-top:30px;
+  }
+
+  .apply > .file-box{
+    width:calc(~"100% - 40px");
+    height:80px;
+
+    margin:auto;
+
+    .flex-align-between;
+
+    margin-top:30px;
+  }
+
+  .apply > .apply-btn-box > .apply-btn{
+    width:70%;
+    height:70%;
+
+
+    border:1px solid #fff;
+    border-radius:5px;
+
+    color:#fff;
+    font-size:16px;
+    font-weight:200;
+
+    .flex-center;
+  }
+
 }

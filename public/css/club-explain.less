@@ -1,4 +1,4 @@
-@import "flex.less";
+@import "https://jhun24.github.io/flex.less";
 
 .scroll-body > .main-content > .club-explain-text{
   width:94%;
@@ -29,21 +29,6 @@
   margin:auto;
 }
 
-.scroll-body > .main-content > .club-explain-text  > h4{
-  font-size:42px;
-  font-weight:600;
-  font-family:'Cabin',sans-serif;
-
-  line-height:50px;
-}
-
-
-.scroll-body > .main-content > .club-explain-text  > p{
-  font-size:13px;
-  font-weight:100;
-
-  line-height:17px;
-}
 
 .scroll-body > .main-content > .club-explain-text > .club-apply{
   width:100%;
@@ -69,31 +54,101 @@
   cursor:pointer;
 }
 
-.edcan-explain{
-  width:90%;
-  height:500px;
 
-  margin:auto;
-  padding-top:50px;
 
-  color:#fff;
+@media (min-width: 640px) {
+  .edcan-explain{
+    width:90%;
+    height:500px;
+
+    margin:auto;
+    padding-top:50px;
+
+    color:#fff;
+  }
+
+
+  .edcan-explain > p{
+    font-size:14px;
+    font-weight:100;
+
+    line-height:30px;
+  }
+
+  .edcan-explain > h4{
+    font-family:'Cabin',sans-serif;
+    font-size:40px;
+    font-weight:400;
+
+    line-height:50px;
+
+    margin-bottom:20px;
+
+  }
+
+
+  .scroll-body > .main-content > .club-explain-text  > h4{
+    font-size:42px;
+    font-weight:600;
+    font-family:'Cabin',sans-serif;
+
+    line-height:50px;
+  }
+
+
+  .scroll-body > .main-content > .club-explain-text  > p{
+    font-size:13px;
+    font-weight:100;
+
+    line-height:17px;
+  }
 }
 
+@media (max-width:639px){
+  .edcan-explain{
+    width:90%;
+    height:500px;
 
-.edcan-explain > h4{
-  font-family:'Cabin',sans-serif;
-  font-size:40px;
-  font-weight:400;
+    margin:auto;
+    margin-top:30px;
+    padding-top:50px;
 
-  line-height:50px;
+    color:#fff;
+  }
 
-  margin-bottom:20px;
 
-}
+  .edcan-explain > p{
+    font-size:12px;
+    font-weight:200;
 
-.edcan-explain > p{
-  font-size:14px;
-  font-weight:100;
+    line-height:20px;
+  }
 
-  line-height:30px;
+  .edcan-explain > h4{
+    font-family:'Cabin',sans-serif;
+    font-size:30px;
+    font-weight:400;
+
+    line-height:40px;
+
+    margin-bottom:20px;
+
+  }
+
+
+  .scroll-body > .main-content > .club-explain-text  > h4{
+    font-size:30px;
+    font-weight:600;
+    font-family:'Cabin',sans-serif;
+
+    line-height:40px;
+  }
+
+
+  .scroll-body > .main-content > .club-explain-text  > p{
+    font-size:10px;
+    font-weight:400;
+
+    line-height:14px;
+  }
 }
