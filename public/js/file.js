@@ -8,7 +8,7 @@ $('input[type=file]').change(function () {
 });
 
 $('.apply-btn-box').click(()=> {
-    axios.post("http://iwin247.info/apply",
+    axios.post("http://iwin247.info:3222/apply",
      {name: $(".name").val(),
       Student_id: $(".school-number").val(),
       Phone_number: $(".phone").val(),
