@@ -5,9 +5,5 @@ module.exports = (router, Users)=>{
     if(!result.ok) res.status(200).json({message : "save success!"});
     else res.status(500).json({message : "save failed!"});
   })
-  .post('/chk', async (req,res)=>{
-    var result2 = await Users.find();
-    res.status(200).json(result2);
-  })
   return router;
 }
