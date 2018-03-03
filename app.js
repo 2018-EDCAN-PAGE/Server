@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const CORS = require('cors')();
+const cors = require('cors');
 const path = require('path');
 const fs = require('fs');
 const bodyParser = require('body-parser');
@@ -8,7 +8,7 @@ const multiparty = require('multiparty');
 require('./mongo');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({limit: '1gb', extended: false }));
-app.use(CORS);
+app.use(cors());
 app.use(express.static('public')); // fuck;;;
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
