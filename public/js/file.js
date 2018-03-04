@@ -18,10 +18,6 @@ $('.apply-btn-box').click(()=> {
     
 });
 
-$(".file-btn").click(()=>{
-    file_exist = true;
-});
-
 $(".club-apply-btn").click(()=> {
     $("#apply").show();
     location.href = "#apply";
