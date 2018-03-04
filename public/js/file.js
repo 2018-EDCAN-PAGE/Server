@@ -10,10 +10,10 @@ $('.apply-btn-box').click(()=> {
         Introduce: $(".self-explain").val(),
         Motive: $(".go-edcan").val(),
         Ability: $(".career").val(),
-        portfolio: $("#checkSurfaceEnvironment-1").prop('checked'),
+            portfolio: $("#portfolio_exist").prop('checked'),
         })
         .then(()=>{
-            if(file_exist) location.href = "http://iwin247.kr:3222"
+            if ($("#portfolio_exist").prop('checked')) location.href = "http://iwin247.kr:3222"
             else location.href = "http://iwin247.info/finish"
         });
     }
