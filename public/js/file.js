@@ -1,7 +1,7 @@
 const file_exist = false;
 
 $('.apply-btn-box').click(()=> {
-    axios.post("http://iwin247.info:3222/apply",
+    axios.post("http://iwin247.info/apply",
      {name: $(".name").val(),
       Student_id: $(".school-number").val(),
       Phone_number: $(".phone").val(),
