@@ -1,5 +1,3 @@
-var file_exist = false;
-
 $('.apply-btn-box').click(()=> {
     if ($(".name").val() == "" || $(".school-number").val() == "" || $(".phone").val() == "" || $(".email").val() == "" || $(".self-explain").val() == "" || $(".go-edcan").val() == "" || $(".career").val() == "")
      alert("모든 내용을 체워주세요");
@@ -12,7 +10,7 @@ $('.apply-btn-box').click(()=> {
         Introduce: $(".self-explain").val(),
         Motive: $(".go-edcan").val(),
         Ability: $(".career").val(),
-        portfolio: file_exist,
+        portfolio: $("#checkSurfaceEnvironment-1").prop('checked'),
         })
         .then(()=>{
             if(file_exist) location.href = "http://iwin247.kr:3222"
@@ -25,8 +23,3 @@ $(".club-apply-btn").click(()=> {
     $("#apply").show();
     location.href = "#apply";
 });
-
-$(".file-btn").click(()=> {
-    file_exist = true;
-});
-
