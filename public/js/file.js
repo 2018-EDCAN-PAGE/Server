@@ -1,4 +1,4 @@
-const file_exist = false;
+var file_exist = false;
 
 $('.apply-btn-box').click(()=> {
     if ($(".name").val() == "" || $(".school-number").val() == "" || $(".phone").val() == "" || $(".email").val() == "" || $(".self-explain").val() == "" || $(".go-edcan").val() == "" || $(".career").val() == "")
@@ -25,3 +25,8 @@ $(".club-apply-btn").click(()=> {
     $("#apply").show();
     location.href = "#apply";
 });
+
+$(".file-btn").click(()=> {
+    file_exist = true;
+});
+
