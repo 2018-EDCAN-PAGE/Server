@@ -19,8 +19,6 @@ $('.apply-btn-box').click(()=> {
 });
 
 $(".club-apply-btn").click(()=> {
-    apply.style.disply = "";
-    var offset = $("#apply").offset();
-    $('html, body').animate({ scrollTop: offset.top }, 400);
-
+    $("#apply").show();
+    location.href = "#apply";
 });
