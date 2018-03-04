@@ -12,8 +12,8 @@ $('.apply-btn-box').click(()=> {
       portfolio: file_exist,
     })
     .then(()=>{
-        if(file_exist) location.href = "iwin247.kr:3222"
-        else location.href = "iwin247.info:3222/finish"
+        if(file_exist) location.href = "http://iwin247.kr:3222"
+        else location.href = "http://iwin247.info:3222/finish"
     });
     
 });
