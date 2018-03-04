@@ -18,11 +18,11 @@ app.get('/', (req,res)=>{
   res.render('main.html');
 })
 
-var router = require('./routes/index')(express.Router(), fs, path, Users, multiparty);
+var router = require('./routes/index')(express, fs, path, Users, multiparty);
 app.use('/', router);
 
 
 
-app.listen(3222, ()=>{
+app.listen(80, ()=>{
   console.log('Server porting on 3222');
 })
