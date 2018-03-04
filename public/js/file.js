@@ -19,7 +19,8 @@ $('.apply-btn-box').click(()=> {
 });
 
 $(".club-apply-btn").click(()=> {
-    location.href = "#apply";
-});
+    apply.style.disply = "";
+    var offset = $("#apply").offset();
+    $('html, body').animate({ scrollTop: offset.top }, 400);
 
-// 알아서 연동하고
+});
