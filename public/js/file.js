@@ -23,3 +23,8 @@ $(".club-apply-btn").click(()=> {
     $("#apply").show();
     location.href = "#apply";
 });
+
+$(".file-btn").click(() => {
+    var status = $("#portfolio_exist").prop('checked');
+    $("#portfolio_exist").prop('checked', !status);
+});
