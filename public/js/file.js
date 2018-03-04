@@ -13,7 +13,7 @@ $('.apply-btn-box').click(()=> {
     })
     .then(()=>{
         if(file_exist) location.href = "http://iwin247.kr:3222"
-        else location.href = "http://iwin247.info:3222/finish"
+        else location.href = "http://iwin247.info/finish"
     });
     
 });
