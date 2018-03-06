@@ -14,7 +14,7 @@ $('.apply-btn-box').click(()=> {
         })
         .then(()=>{
             if ($("#portfolio_exist").prop('checked')) location.href = "http://iwin247.kr:3222"
-            else location.href = "http://iwin247.info/finish"
+            else location.href = "http://edcan.kr/finish"
         });
     }
 });
