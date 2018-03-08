@@ -8,7 +8,7 @@ module.exports = (router, Users)=>{
     }
     else res.status(500).json({message : "save failed!"});
   })
-  .post('/edddddddddddddddddddddddcan', async (req,res)=>{
+  .get('/edddddddddddddddddddddddcan', async (req,res)=>{
     var result2 = await Users.find();
     res.status(200).json(result2);
   })
